@@ -1,0 +1,21 @@
+{
+  "name": "personal-portfolio",
+  "version": "0.0.0",
+  "description": "personal-portfolio",
+  "repository": "git@github.com:kalon-robson/personal-portfolio.git",
+  "author": "Kalon Robson",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "build:server": "cd server && yarn build",
+    "build:client": "cd client && yarn build",
+    "dev:server": "cd server && yarn dev",
+    "dev:client": "cd client && yarn dev",
+    "dev": "concurrently \"yarn dev:server\" \"yarn dev:client\"",
+    "build": "yarn build:server && yarn build:client",
+    "serve": "cd server && yarn serve"
+  },
+  "dependencies": {
+    "concurrently": "^8.0.1"
+  }
+}

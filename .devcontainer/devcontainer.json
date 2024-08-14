@@ -1,0 +1,19 @@
+{
+  "name": "personal-portfolio",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "server",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "orsenkucher.vscode-graphql"
+      ]
+    }
+  },
+  "forwardPorts": [
+    9000,
+    3000,
+    27017
+  ]
+}
