@@ -31,5 +31,10 @@ services:
       - mongodb-data:/data/db
     network_mode: service:server
 
+  mailhog:
+    image: mailhog/mailhog
+    restart: unless-stopped
+    network_mode: service:server
+
 volumes:
   mongodb-data:
